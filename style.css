@@ -167,6 +167,9 @@ button{
     color: var(--White);
     font-weight: 700;
 }
+img{
+  margin-left:1rem;
+}
 .circle{
     display: flex;
     justify-content:center;
