@@ -1,0 +1,230 @@
+/* variables*/
+
+:root {
+  
+    --LightRed: hsl(0, 100%, 67%);
+    --OrangeyYellow: hsl(39, 100%, 56%);
+    --GreenTeal: hsl(166, 100%, 37%);
+    --Cobaltblue: hsl(234, 85%, 45%);
+    --White: hsl(0, 0%, 100%);
+    --PaleBlue: hsl(221, 100%, 96%);
+    --LightLavender: hsl(241, 100%, 89%);
+    --DarkGrayBlue: hsl(224, 30%, 27%);
+    --LightSlateBlue: hsl(252, 100%, 67%);
+    --LightRoyalBlue: hsl(241, 81%, 54%);
+    --VioletBlue: hsla(256, 72%, 46%, 1);
+    --PersianBlue: hsla(241, 72%, 46%, 1);
+    
+  }
+  
+  /* reset */
+  
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
+@font-face{
+    font-family:HankenGrotesk;
+    font-weight: 500;
+    src: var("https://fonts.google.com/specimen/Hanken+Grotesk");
+}
+
+
+body{
+    font-size: 18px;
+    font-family: HankenGrotesk;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--PaleBlue);
+}
+main{
+    border-radius: 1rem;
+    background-color: var(--White);
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    margin:10rem 0 ;
+}
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--White);
+    background-color:var(--LightRoyalBlue);
+    border-radius: 1rem;
+    width: 50%;
+    padding:1rem 2rem;
+}
+.left p{
+    padding:1rem 0rem;
+    width: 80%;
+}
+.left .great{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    padding:3rem 2rem;
+}
+.right p{
+    width: 80%;
+    text-align: left;
+    color: var(--DarkGrayBlue);
+    font-size: 1.5rem;
+}
+.right .rect{
+    width: 80%;
+}
+div.rectangle{
+    padding:1rem;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 0.5rem;
+    border-radius: 0.5rem;
+}
+.left h3,.left p{
+    color: var(--LightLavender);
+}
+.left p{
+    text-align: center;
+}
+div.rect{
+    width: 80%;
+    margin: 2rem 0;
+}
+#reaction{
+    background-color: hsla(0, 100%, 67%,0.1);
+    color: var(--LightRed);
+}
+#memory{
+    background-color:hsla(39, 100%, 56%,0.1);
+    color: var(--OrangeyYellow);
+}
+#verbal{
+    background-color:hsla(166, 100%, 37%,0.1);
+    color: var(--GreenTeal);
+}
+#visual{
+    background-color:hsla(234, 85%, 45%,0.1) ;
+    color: var(--Cobaltblue);
+}
+
+.blue{
+    color:var(--DarkGrayBlue);
+}
+p{
+    font-weight: 600;
+}
+button{
+    font-weight: 600;
+    width: 80%;
+    border: 0px;
+    border-radius: 2rem;
+    color: var(--White);
+    padding:1rem 4rem;
+    background-color: var(--DarkGrayBlue);
+}
+.left h3{
+    margin-top: 2rem;
+    color: var(--White);
+    font-weight: 700;
+}
+.circle{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+    width: 12rem;
+    height: 12rem;
+    padding: 1rem;
+    border-radius:12rem ;
+    background-color: var(--VioletBlue);
+    text-align: center;
+    margin-top: 2rem;
+}
+.circle h1{
+    margin-top: 2rem;
+    margin-bottom: 0;
+}
+.circle p{
+    margin: 0;
+    width: auto;
+}
+div.rectangle div:first-child{
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:1000px){
+    body{
+        font-size: 12px;
+    }
+    .right{
+        background-color: var(--White);
+        border-radius: 2rem;
+    }
+}   
+
+@media (max-width:800px){
+    body{
+        font-size: 16px;
+    }
+    main{
+        flex-direction:column;
+        width: 80%;
+    }
+    .left{
+        width: auto;
+    }
+    .right{
+        width: auto;
+    }
+    .blue{
+        text-align: end;
+        
+    }
+}
+
+@media (max-width:400px){
+    main{
+        width: 100%;
+    }
+}
